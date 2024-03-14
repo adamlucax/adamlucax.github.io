@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=latex 2024.3.14)  14 MAR 2024 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=latex 2024.3.14)  14 MAR 2024 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,9 +7,8 @@ e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\g
 @addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\doc
 umentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname te
 x4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HC
-ode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  latex/resume.te
-x
-(latex/resume.tex
+ode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  resume.tex
+(resume.tex
 (C:\Users\adamlucax\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\adamlucax\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
@@ -815,12 +814,12 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13804 strings out of 474543
- 208782 string characters out of 5742584
+ 13802 strings out of 474543
+ 208718 string characters out of 5742584
  1934975 words of memory out of 5000000
  35775 multiletter control sequences out of 15000+600000
  564201 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,7n,96p,792b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,7n,96p,786b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on resume.dvi (8 pages, 28384 bytes).

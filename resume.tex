@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Adam Silva
+% Adapted from: Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeText}[1]{
+    #1 \\
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Adam Lucas Pinheiro da Silva}  &  LinkedIn : \href{https://www.linkedin.com/in/adamlucax/}{\color{blue}\underline{adamlucax}}\\
+    \href{mailto:adam.lucax@gmail.com}{\color{blue}adam.lucax@gmail.com}    % &  GitHub : \href{https://github.com/adamlucax}{\color{blue}\underline{adamlucax}}\\
+                                                                                                                 &  Mobile : \href{tel:+5579991054252}{+55 79 99105 4252}\\
+                                                                                                                 &  Aracaju, BR 
+\end{tabular*}\vspace{-5pt}
+
+
+%--------------ABOUT--------------------
+
+\section{About}
+  \resumeText 
+    {Software Engineer with almost 10 years programming and 5 years developing games professionally, applying my knowledge in clean code and design patterns. Also passionate about architecting new features, creating tools, and solving problems with data structures and algorithms}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidade Federal de Sergipe}{Aracaju, BR}
+      {Bachelor of Computer Science (Forming)}{Jun 2024}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C\#, Python}
+      \hfill
+      \textbf{Technologies}{: Unity, Git, AWS, TeamCity}
+    }\vspace{-5pt}
+    \item{
+      \textbf{Programming}{: Clean Code, SOLID, Design Patterns, Data Structure, Algorithms, Optimization}
+    }\vspace{-5pt}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Lumen Games}{Aracaju, BR}
+      {Software Engineer}{Apr 2021 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {\href{https://play.google.com/store/apps/details?id=games.lumen.homatales}{\color{blue}\underline{Dreamweaver Tactics}}}
+          {An strategic autobattle game using hex grid.
+            \begin{itemize}
+              \item Worked closely with game designers to develop the initial prototype and iteratively refine game mechanics.
+              \item Held a engineering role throughout the project lifecycle, from pre-production to MVP launch. Contributed to risk analysis, and conducted revisions to reutilize our codebase modules.
+              \item Collaborated in building the programming team, from conducting technical interviews to onboarding new hires.
+              \item Designed and implemented a data structure to facilitate hex grid generation, streamline UI input snapping, and grid-based pathing.
+              \item Developed a scalable architecture for managing character abilities and skills, enabling integration of multiple status effects and enhancing designers configuration.
+            \end{itemize}
+          }
+        \resumeItem
+          {\href{https://play.google.com/store/apps/details?id=games.redhood.hempparadise}{\color{blue}\underline{Hemp Paradise: City Building}}}
+          {A game to build your own weed resort.
+            \begin{itemize}
+              \item Worked collaboratively on the development of a player's building editing tool using Unity's Isometric Tilemap.
+              \item Owned the development of a multiplayer guild event feature, leveraging backend API integration and close collaboration with backend engineers.
+              \item Implemented the only minigame, that revolving around squared grid navigation, applying some data structures and pathing algorithms.
+              \item Partnered with external sound engineers to import and integrate audio assets into the game using WWise.
+              \item Managed the import and integration of assets using Spine and sprites.
+              \item Managed the integration and updates of various SDKs including Firebase, DeltaDNA, IronSource, and others.
+            \end{itemize}
+          }
+        \resumeItem
+          {\href{https://play.google.com/store/apps/details?id=com.eastsidegames.thegoldbergs}{\color{blue}\underline{The Goldbergs: Back to the 80s}}}
+          {An idle game based on \textit{The Goldbergs} TV series.
+            \begin{itemize}
+              \item Collaborated on refining and optimizing our proprietary tool to import data from with Google Spreadsheets using Python.
+              \item Integrated an external framework tailored for idle games.
+              \item Implemented a map generation system based on designer-provided configurations.
+            \end{itemize}
+          }
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+     {Software Engineer - Intern}{Feb 2019 - Apr 2021}
+     \resumeItemListStart
+        \resumeItem
+          {\href{https://www.youtube.com/watch?v=MLjikLDk6D8&ab_channel=LumenGames}{\color{blue}\underline{Kids Vs Zombies}}}
+          {A grid based strategic roguelike game.
+            \begin{itemize}
+              \item Developed and fine-tuned adaptive UI screens to ensure seamless user experience across various aspect ratios.
+              \item Identified and resolved software bugs to ensure optimal functionality and user experience.
+              \item Conducted refactoring efforts aimed at scaling the codebase to evolving project features.
+            \end{itemize}
+          }
+     \resumeItemListEnd
+
+
+% -----------PROJECTS-----------------
+\section{Personal Projects}
+    \resumeSubItem{Problem Solving}
+      {Used some platforms such as LeetCode, HackerRank, and Codeforces to solve some algorithmic problems as hobby. Additionally, I have actively participated in ICPC regional contests.}
+    \resumeSubItem{Programming Teacher}
+      {Worked teaching some kids in middle school to code, to stimulate kids to participate in the Brazilian Olympiad in Informatics}
+    % \resumeSubItem{Unreal Project}
+    % {Party Game}
+%     \resumeSubItem{Godot Project}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{C++ Project}
+%       {Pixel Perfect}
+
+\resumeSubHeadingListEnd
+\end{document}
