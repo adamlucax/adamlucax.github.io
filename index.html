@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        embed {
-            width: 100%;
-            height: 100vh;
-        }
-    </style>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <embed src="latex/resume.pdf" type="application/pdf" />
+    <nav id="desktop-nav">
+        <div class="logo">Adam Lucas</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="loadPage('about.html')">About</a></li>
+                <li><a href="#resume" onclick="loadPage('resume.html')">Resume</a></li>
+                <li><a href="#projects" onclick="loadPage('projects.html')">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="subpage-container">
+        <!-- Subpage content will be loaded here -->
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Load the default subpage based on hash fragment when page loads
+        window.onload = loadSubpageFromHash;
+
+        // Listen for hash change events to load subpages dynamically
+        window.addEventListener('hashchange', loadSubpageFromHash);
+    </script>
 </body>
 </html>
