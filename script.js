@@ -31,3 +31,10 @@ function loadSubpageFromHash() {
     };
     xhr.send();
 }
+
+function toggleMenu() {
+    const menu = document.querySelector(".column-menu");
+    const icon = document.querySelector(".menu-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }

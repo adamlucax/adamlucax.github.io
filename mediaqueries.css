@@ -1,13 +1,21 @@
 @media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+    }
+
     #about {
         flex-direction: column;
     }
 
-    .section__pic-container {
+    .profile-image {
         display: flex;
-        justify-content: center;
-        height: 400px;
-        width: 400px;
+        justify-content: center;  
+        width: 275px;
+        height: 275px;
         margin: 0 auto;
     }
 }

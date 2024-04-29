@@ -19,8 +19,23 @@ p {
     color: rgb(85, 85, 85);
 }
 
+/* TRANSITION */
 
-nav, .nav-links {
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* NAVIGATION */
+
+.list-menu {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 2rem;
+    list-style: none;
+    font-size: 2rem;
+}
+
+nav, .list-menu {
     display: flex;
 }
 
@@ -30,21 +45,87 @@ nav {
     height: 17vh;
 }
 
-/* TRANSITION */
+/* HAMBURGUER MENU */
+#mobile-nav {
+    display: none;
+}
 
-a, .btn {
-    transition: all 300ms ease;
+.mobile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.column-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    margin-top: 20px;
+}
+
+.column-menu a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+  
+.column-menu li {
+    list-style: none;
+}
+  
+.column-menu.open {
+    max-height: 300px;
+}
+  
+.menu-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+  
+.menu-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+  
+.menu-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+  
+.menu-icon span:first-child {
+    transform: none;
+}
+  
+.menu-icon span:first-child {
+    opacity: 1;
+}
+  
+.menu-icon span:first-child {
+    transform: none;
 }
 
 /* INDEX */
-
-.nav-links {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 2rem;
-    list-style: none;
-    font-size: 2rem;
-}
 
 a {
     color: black;
@@ -78,14 +159,14 @@ a:hover {
     width: 100%;
 }
   
-.section__pic-container {
+.profile-image {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
 
-.section__pic-container img {
+.profile-image img {
     width: 100%;
     height: 100%;
 }

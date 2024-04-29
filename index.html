@@ -2,22 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="header">
+    <nav id="desktop-nav">
         <div class="logo">Adam Lucas</div>
         <div>
-            <ul class="nav-links">
+            <ul class="list-menu">
                 <li><a href="#about" onclick="loadPage('about.html')">About</a></li>
                 <li><a href="#resume" onclick="loadPage('resume.html')">Resume</a></li>
                 <li><a href="#projects" onclick="loadPage('projects.html')">Projects</a></li>
             </ul>
+
         </div>
     </nav>
+    <nav id="mobile-nav">
+        <div class="logo">Adam Lucas</div>
+        <div class="mobile-menu">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="column-menu">
+                <li><a href="#about" onclick="loadPage('about.html')">About</a></li>
+                <li><a href="#resume" onclick="loadPage('resume.html')">Resume</a></li>
+                <li><a href="#projects" onclick="loadPage('projects.html')">Projects</a></li>
+            </div>
+        </div>
+      </nav>
     <div id="subpage">
         <!-- Subpage content will be loaded here -->
     </div>
