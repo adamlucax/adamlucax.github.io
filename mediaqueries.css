@@ -1,0 +1,13 @@
+@media screen and (max-width: 1200px) {
+    #about {
+        flex-direction: column;
+    }
+
+    .section__pic-container {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+    }
+}
