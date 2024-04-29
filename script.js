@@ -5,6 +5,8 @@ function loadPage(pageUrl) {
             document.getElementById('subpage').innerHTML = html;
         })
         .catch(error => console.error('Error loading page:', error));
+
+    toggleMenu();
 }
 
 // Function to load subpage based on hash fragment
@@ -30,6 +32,8 @@ function loadSubpageFromHash() {
         loadPage(defaultPage);
     };
     xhr.send();
+
+    toggleMenu();
 }
 
 function toggleMenu() {
@@ -37,4 +41,4 @@ function toggleMenu() {
     const icon = document.querySelector(".menu-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-  }
+}

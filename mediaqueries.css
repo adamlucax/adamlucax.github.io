@@ -18,4 +18,10 @@
         height: 275px;
         margin: 0 auto;
     }
+
+    .pdf-container{
+        display: flex;
+        flex-direction:column;
+        height: 600px;
+    }
 }
