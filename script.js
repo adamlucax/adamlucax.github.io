@@ -2,7 +2,7 @@ function loadPage(pageUrl) {
     fetch(pageUrl)
         .then(response => response.text())
         .then(html => {
-            document.getElementById('subpage-container').innerHTML = html;
+            document.getElementById('subpage').innerHTML = html;
         })
         .catch(error => console.error('Error loading page:', error));
 }
