@@ -19,9 +19,11 @@
         margin: 0 auto;
     }
 
-    .pdf-container{
-        display: flex;
-        flex-direction:column;
+    /* .pdf-container{
+        min-width: 10vh;
+        width: 100%;
+        margin-left: 10rem;
+        margin-right: 10rem;
         height: 600px;
-    }
+    } */
 }
